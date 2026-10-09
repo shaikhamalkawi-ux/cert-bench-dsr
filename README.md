@@ -13,6 +13,15 @@ The current release is a **limited, evidence-gated reproducibility snapshot** as
 
 **Important:** The three benchmark summaries are not full benchmark source matrices. This archive alone does **not** rerun every benchmark calculation or reconstruct all 109 pairwise certificates from raw source artifacts. The Tetouan case is a retrospective analysis of published forecasting tables, not model retraining or a live deployment.
 
+## Quick start from a clone
+
+```bash
+python -m pip install -r requirements.txt
+python run_reproduction.py
+```
+
+The helper verifies the frozen ZIP and all 14 manifest entries before running the original unmodified Tetouan script in a temporary directory. It is a packaging convenience, not a new scientific calculation.
+
 ## Reproduce the Tetouan calculation
 
 Download `artifacts/CERT_Bench_ESWA_R15_Anonymous_Reproducibility_Package.zip` and extract it.
